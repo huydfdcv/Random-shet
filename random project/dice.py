@@ -11,11 +11,14 @@ def parse_input():
     else:
         print("The input has to be in between 1 and 6, Try again")
         return parse_input()
+   
 def rattled(num_dice):
     result = []
     for i in range(num_dice):
         result.append(random.randint(1, 6))
     return result
+
+
 # main code goes here
 #1. Get the ammount of dice
 num_dice = parse_input()
